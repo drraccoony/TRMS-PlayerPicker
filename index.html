@@ -1,0 +1,332 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="googlebot" content="noarchive" />
+    <meta name="author" content="DrRaccoon">
+    <title>TRMS</title>
+    <!-- Bootstrap / JQuery / -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Optional theme -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <style>
+    body {
+        background-color: black;
+        color: black;
+    }
+
+    P
+    {
+      color: white;
+    }
+
+    h1 {
+        color: maroon;
+        margin-left: 40px;
+    }
+  </style>
+<body>
+  <div class="container" style="background-color: #333;">
+    <br>
+    <img src="https://daks2k3a4ib2z.cloudfront.net/57fd2fcc3f413fc00e37c09e/57fd3050b5021ecb0eb396f2_logo_trms.png" alt="TRMS" >
+    <br><br>
+
+    <!-- FEATURE TOGGLES -->
+      <center>
+      <div class="btn-group-sm" role="group" data-toggle="buttons">
+        <label class="btn btn-default feature" id="poe" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-bolt" aria-hidden="true"></i> POE<br><small>Power Over Ethernet</small>
+        </label>
+        <label class="btn btn-default feature" id="entrylvl" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-star-half-o" aria-hidden="true"></i> Entrylevel<br><small>Basic Signage</small>
+        </label>
+        <label class="btn btn-default feature" id="html" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-html5" aria-hidden="true"></i> HTML<br><small>Webpage Embed</small>
+        </label>
+        <label class="btn btn-default feature" id="interactive" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Interactive<br><small>Touch & Kiosks</small>
+        </label>
+        <label class="btn btn-default feature" id="rs232" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-power-off" aria-hidden="true"></i> RS232<br><small>Monitor Control</small>
+        </label>
+        <label class="btn btn-default feature" id="hdmicec" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-power-off" aria-hidden="true"></i> HDMI-CEC<br><small>Monitor Control</small>
+        </label>
+        <label class="btn btn-default feature" id="serverplayer" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-database" aria-hidden="true"></i> Standalone<br><small>Server & Player</small>
+        </label>
+        <label class="btn btn-default feature" id="performance" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-film" aria-hidden="true"></i> Performance Video<br><small>Playing video / videowalls</small>
+        </label>
+        <label class="btn btn-default feature" id="hdmiin" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-desktop" aria-hidden="true"></i> HDMI Input<br><small>With HDCP Support</small>
+        </label>
+        <label class="btn btn-default feature" id="allinone" onclick="showhide(this)">
+          <input type="checkbox" autocomplete="off"><i class="fa fa-television" aria-hidden="true"></i> All In One<br><small>Player & Display</small>
+        </label>
+      </div></center>
+      <hr>
+    <!-- END FEATURE TOGGLES -->
+
+    <!-- CAROUSEL PLAYER -->
+    <div id="carlicplayer" class="product well well-sm">
+      <h3>Windows Player Software</h3>
+      <div class="row">
+        <div class="col-md-2 visible-lg"><img src="https://daks2k3a4ib2z.cloudfront.net/57fd2fcc3f413fc00e37c09e/5818a90ba49bac756d8ec5bb_logo_carousel_vert-p-500x625.png" alt="..." class="img-rounded img-responsive" ></div>
+        <div class="col-md-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+          <br />
+          <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+        <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+      </div>
+    </div>
+    <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL 270 -->
+   <div id="CAR270" class="product well well-sm serverplayer performance interactive rs232 html"><span class="label label-primary pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Interactive</span> <span class="label label-warning pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> RS-232</span>
+     <h3>Carousel 270</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://daks2k3a4ib2z.cloudfront.net/57fd2fcc3f413fc00e37c09e/58dadc2117b41a773aa68a2e_Carousel%20270%20(1)-p-800x554.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         The Carousel 270 provides unmatched functionality and Digital Signage features. Combined with a Carousel Player License, the Carousel 270 is a powerful digital signage media player. Add a Carousel Server License, and the Carousel 270 is a complete stand alone digital signage system. In fact this small box can serve as a hub for up to 15 different channels and players.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL 340 -->
+   <div id="CAR340" class="product well well-sm serverplayer interactive performance html"><span class="label label-primary pull-right"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Interactive</span> <span class="label label-primary pull-right"><i class="fa fa-power-off" aria-hidden="true"></i> RS-232</span>
+     <h3>Carousel 340</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://daks2k3a4ib2z.cloudfront.net/57fd2fcc3f413fc00e37c09e/58dae0dabfcc83dd319f5a58_Carousel%20Server%20340%20(2)-p-800x474.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         The Carousel 340 is the optimal digital signage media appliance for your building or campus. Paired with a Carousel Server License, the Carousel 340 becomes a standalone system capable of distributing content to 14 additional players.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL 440 -->
+   <div id="CAR440" class="product well well-sm">
+     <h3>Carousel 440</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://daks2k3a4ib2z.cloudfront.net/57fd2fcc3f413fc00e37c09e/581ac2411d1632fd68bb02d4_car_prod_430.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         The Carousel 440 is built to be paired with the Carousel Enterprise software to accommodate up to 300 channels of digital signage. This digital signage appliance features 2 hot-swapable enterprise hard drives, redundant power and sliding rack rails that all fits in a 1RU chassis.
+         <br><strong>Carousel server only.</strong> Cannot act as player.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL LS423 -->
+   <div id="LS423" class="product well well-sm entrylvl hdmicec"><span class="label label-danger pull-right"><i class="fa fa-star-half-o" aria-hidden="true"></i> Entry Level</span>
+     <h3>Brightsign LS423</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/1914/7311/4061/LS.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL HD223 -->
+   <div id="HD223" class="product well well-sm entrylvl hdmicec"><span class="label label-danger pull-right"><i class="fa fa-star-half-o" aria-hidden="true"></i> Entry Level</span>
+     <h3>Brightsign HD223</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/3726a84a87a34bc0126cad86f7edba66.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL HD1023 -->
+   <div id="HD1023" class="product well well-sm entrylvl hdmicec"><span class="label label-danger pull-right"><i class="fa fa-star-half-o" aria-hidden="true"></i> Entry Level</span>
+     <h3>Brightsign HD1023</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/b99916ecfc25986ba0f6e1ea7e1c4564.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL XD233 -->
+   <div id="XD233" class="product well well-sm hdmicec performance">
+     <h3>Brightsign XD233</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/e073d28dc7e13071f5e8f3096ccec3e7.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL XD1033 -->
+   <div id="XD1033" class="product well well-sm hdmicec performance rs232">
+     <h3>Brightsign XD1033</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/00d49b8f90cfc7d0f81c0ed17d151f98.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL XT243 -->
+   <div id="XT243" class="product well well-sm hdmice performance poe">
+     <h3>Brightsign XT243</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/11650292f3d447ecb616f9e955e8c644.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL XT1143 -->
+   <div id="XT1143" class="product well well-sm hdmicec performance poe">
+     <h3>Brightsign XT1143</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/a2fccb58b0c2a28478b2a50b0fc4d85a.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL HD-OPS Player -->
+   <div id="HDOPS" class="product well well-sm hdmicec performance">
+     <h3>Brightsign HD-OPS Player</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://www.brightsign.biz/application/files/cache/0cae49186e28ecd8bd47767242be7fc3.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL AVNU 10" -->
+   <div id="AVNU10" class="product well well-sm poe allinone">
+     <h3>AVNU 10" All-in-one</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://avnu.com/wp-content/uploads/2017/02/PF10HS123CT_AVNU_10_Inch_Display.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL AVNU 22" -->
+   <div id="AVNU22" class="product well well-sm allinone">
+     <h3>AVNU 22" All-in-one</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://avnu.com/wp-content/uploads/2017/02/PF22HS123CT_AVNU_22_Inch_Display_Front_1-1.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+   <!-- CAROUSEL APPLETV -->
+   <div id="AppleTV" class="product well well-sm performance">
+     <h3>AppleTV</h3>
+     <div class="row">
+       <div class="col-md-2 visible-lg"><img src="https://cdn.macrumors.com/article-new/2013/09/appletv-e1382101627468.png" alt="..." class="img-rounded img-responsive" ></div>
+       <div class="col-md-8">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis erat diam, in commodo ipsum semper sed. Ut vestibulum augue at ipsum facilisis, ac dapibus sapien semper. In placerat elit nec nunc tempor, ut convallis nibh ornare. Sed egestas facilisis ex, ut finibus dui tempus et. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id malesuada lacus. Donec scelerisque sagittis amet.
+         <br />
+         <!-- <strong>Purchasing SKU:</strong> <code>CAR-270</code> or <code>CAR-270-WIFI</code><b><br> -->
+       <a href="#" class="btn btn-default btn-xs" role="button"><i class="fa fa-info-circle" aria-hidden="true"></i> More info</a></div>
+     </div>
+   </div>
+   <!-- END PLAYER CARD -->
+
+  </div>
+</body>
+
+<script type="text/javascript">
+  var selectedFeatures = [];
+
+  function showhide(e) {
+    var clickedFeature = e.id;
+    if (selectedFeatures.includes(clickedFeature)) {
+      var i = selectedFeatures.indexOf(clickedFeature);
+      selectedFeatures.splice(i, 1);
+    } else {
+      selectedFeatures.push(e.id);
+    }
+
+    console.log('features: ', selectedFeatures)
+
+    var products = $('.product');
+
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+
+
+      if (shouldShowProduct(product)) {
+        document.getElementById(product.id).style.display = "block";
+      } else {
+        document.getElementById(product.id).style.display = "none";
+      }
+    }
+  }
+
+  function shouldShowProduct(product) {
+    for (var j = 0; j < selectedFeatures.length; j++) {
+      var feature = selectedFeatures[j]
+      if (!hasClass(product, feature)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+</script>
